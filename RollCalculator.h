@@ -33,6 +33,8 @@ public:
     ContestRollResult contestRoll(int targetA, int targetB);
 
     int reactionRoll(int modfier);
+
+    int damageRoll(const Roll& roll);
 };
 
 #endif /* MECHANIC_H */

@@ -14,15 +14,12 @@
 #include "RollCalculatorTest.h"
 
 #include <string>
-#include "../RollCalculator.h"
 
 CPPUNIT_TEST_SUITE_REGISTRATION(RollCalculatorTest);
 
 RollCalculatorTest::~RollCalculatorTest() { }
 
 void RollCalculatorTest::testSuccessRoll(int roll, int target, const SuccessRollResult& expected) {
-    RollCalculator calculator(generator);
-
     generator.initialize({roll / 3, roll / 3, roll / 3 + roll % 3});
     CPPUNIT_ASSERT_MESSAGE("Rolled " + std::to_string(roll) + " against " + std::to_string(target),
             calculator.successRoll(target) == expected);
@@ -69,8 +66,6 @@ void RollCalculatorTest::testSeventeenSuccessRoll() {
 }
 
 void RollCalculatorTest::testContestRoll() {
-    RollCalculator calculator(generator);
-
     generator.initialize({4});
 
     // Win-Lose
@@ -89,10 +84,17 @@ void RollCalculatorTest::testContestRoll() {
 }
 
 void RollCalculatorTest::testReactionRoll() {
-    RollCalculator calculator(generator);
-
     generator.initialize({2, 5, 1});
+
     CPPUNIT_ASSERT(calculator.reactionRoll(5) == 13);
     CPPUNIT_ASSERT(calculator.reactionRoll(0) == 8);
     CPPUNIT_ASSERT(calculator.reactionRoll(-9) == -1);
+}
+
+void RollCalculatorTest::testDamageRoll() {
+    generator.initialize({2, 4});
+
+    CPPUNIT_ASSERT(calculator.damageRoll(Roll(2, 1)) == 7);
+    CPPUNIT_ASSERT(calculator.damageRoll(Roll(2, -3)) == 3);
+    CPPUNIT_ASSERT(calculator.damageRoll(Roll(2, -7)) == 0);
 }

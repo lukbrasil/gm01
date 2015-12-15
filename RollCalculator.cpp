@@ -53,3 +53,8 @@ int RollCalculator::reactionRoll(int modfier) {
     return sucessRoll(generator) + modfier;
 }
 
+int RollCalculator::damageRoll(const Roll& roll) {
+    int result = roll(generator);
+    return ((result > 0) ? result : 0);
+}
+

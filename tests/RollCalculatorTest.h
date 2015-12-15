@@ -18,6 +18,8 @@
 
 #include "ConstNumberGenerator.h"
 #include "../SuccessRollResult.h"
+#include "../RollCalculator.h"\
+
 
 class RollCalculatorTest : public CPPUNIT_NS::TestFixture {
     CPPUNIT_TEST_SUITE(RollCalculatorTest);
@@ -29,16 +31,18 @@ class RollCalculatorTest : public CPPUNIT_NS::TestFixture {
     CPPUNIT_TEST(testSeventeenSuccessRoll);
     CPPUNIT_TEST(testContestRoll);
     CPPUNIT_TEST(testReactionRoll);
+    CPPUNIT_TEST(testDamageRoll);
 
     CPPUNIT_TEST_SUITE_END();
 
 public:
 
-    RollCalculatorTest() { }
+    RollCalculatorTest() : calculator(generator) { }
     virtual ~RollCalculatorTest();
 
 private:
     ConstNumberGenerator generator;
+    RollCalculator calculator;
 
     void testSuccessRoll(int number, int target, const SuccessRollResult& expected);
     void testSuccessRoll();
@@ -49,6 +53,7 @@ private:
     void testMarginOfSuccessRoll();
     void testContestRoll();
     void testReactionRoll();
+    void testDamageRoll();
 };
 
 #endif /* ROLLCALCULATORTEST_H */
