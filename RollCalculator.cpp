@@ -49,3 +49,7 @@ ContestRollResult RollCalculator::contestRoll(int targetA, int targetB) {
     return ContestRollResult(0, 0);
 }
 
+int RollCalculator::reactionRoll(int modfier) {
+    return sucessRoll(generator) + modfier;
+}
+

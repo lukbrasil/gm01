@@ -28,6 +28,7 @@ class RollCalculatorTest : public CPPUNIT_NS::TestFixture {
     CPPUNIT_TEST(testEighteenSuccessRoll);
     CPPUNIT_TEST(testSeventeenSuccessRoll);
     CPPUNIT_TEST(testContestRoll);
+    CPPUNIT_TEST(testReactionRoll);
 
     CPPUNIT_TEST_SUITE_END();
 
@@ -47,6 +48,7 @@ private:
     void testSeventeenSuccessRoll();
     void testMarginOfSuccessRoll();
     void testContestRoll();
+    void testReactionRoll();
 };
 
 #endif /* ROLLCALCULATORTEST_H */

@@ -31,6 +31,8 @@ public:
     SuccessRollResult successRoll(int target);
 
     ContestRollResult contestRoll(int targetA, int targetB);
+
+    int reactionRoll(int modfier);
 };
 
 #endif /* MECHANIC_H */

@@ -87,3 +87,12 @@ void RollCalculatorTest::testContestRoll() {
     CPPUNIT_ASSERT(calculator.contestRoll(9, 7) == ContestRollResult(1, 2));
     CPPUNIT_ASSERT(calculator.contestRoll(5, 5) == ContestRollResult(0, 0));
 }
+
+void RollCalculatorTest::testReactionRoll() {
+    RollCalculator calculator(generator);
+
+    generator.initialize({2, 5, 1});
+    CPPUNIT_ASSERT(calculator.reactionRoll(5) == 13);
+    CPPUNIT_ASSERT(calculator.reactionRoll(0) == 8);
+    CPPUNIT_ASSERT(calculator.reactionRoll(-9) == -1);
+}

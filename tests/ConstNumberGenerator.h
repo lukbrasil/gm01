@@ -14,7 +14,7 @@
 #ifndef CONSTNUMBERGENERATOR_H
 #define CONSTNUMBERGENERATOR_H
 
-#include "NumberGenerator.h"
+#include "../NumberGenerator.h"
 
 #include <vector>
 
