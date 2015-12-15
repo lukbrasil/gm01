@@ -16,7 +16,7 @@
 
 #include <cppunit/extensions/HelperMacros.h>
 
-#include "../ConstNumberGenerator.h"
+#include "ConstNumberGenerator.h"
 #include "../SuccessRollResult.h"
 
 class RollCalculatorTest : public CPPUNIT_NS::TestFixture {

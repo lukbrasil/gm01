@@ -30,13 +30,13 @@
                    projectFiles="false"
                    kind="TEST_LOGICAL_FOLDER">
       <logicalFolder name="f1" displayName="testRoll" projectFiles="true" kind="TEST">
-        <itemPath>ConstNumberGenerator.h</itemPath>
+        <itemPath>tests/ConstNumberGenerator.h</itemPath>
         <itemPath>tests/RollCalculatorTest.cpp</itemPath>
         <itemPath>tests/RollCalculatorTest.h</itemPath>
         <itemPath>tests/RollTest.cpp</itemPath>
         <itemPath>tests/RollTest.h</itemPath>
-        <itemPath>SixSideDieNumberGeneratorTest/SixSideDieNumberGeneratorTest.cpp</itemPath>
-        <itemPath>SixSideDieNumberGeneratorTest/SixSideDieNumberGeneratorTest.h</itemPath>
+        <itemPath>tests/SixSideDieNumberGeneratorTest.cpp</itemPath>
+        <itemPath>tests/SixSideDieNumberGeneratorTest.h</itemPath>
         <itemPath>tests/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -60,8 +60,6 @@
           <standard>8</standard>
         </ccTool>
       </compileType>
-      <item path="ConstNumberGenerator.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="ContestRollResult.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ContestRollResult.h" ex="false" tool="3" flavor2="0">
@@ -79,16 +77,6 @@
       <item path="SixSideDieNumberGenerator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SixSideDieNumberGenerator.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="SixSideDieNumberGeneratorTest/SixSideDieNumberGeneratorTest.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="SixSideDieNumberGeneratorTest/SixSideDieNumberGeneratorTest.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="SuccessRollResult.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -110,6 +98,8 @@
       </folder>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="tests/ConstNumberGenerator.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="tests/RollCalculatorTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tests/RollCalculatorTest.h" ex="false" tool="3" flavor2="0">
@@ -117,6 +107,16 @@
       <item path="tests/RollTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tests/RollTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/SixSideDieNumberGeneratorTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="tests/SixSideDieNumberGeneratorTest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <item path="tests/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -142,8 +142,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="ConstNumberGenerator.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="ContestRollResult.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ContestRollResult.h" ex="false" tool="3" flavor2="0">
@@ -161,16 +159,6 @@
       <item path="SixSideDieNumberGenerator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SixSideDieNumberGenerator.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="SixSideDieNumberGeneratorTest/SixSideDieNumberGeneratorTest.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="SixSideDieNumberGeneratorTest/SixSideDieNumberGeneratorTest.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
       </item>
       <item path="SuccessRollResult.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -192,6 +180,8 @@
       </folder>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="tests/ConstNumberGenerator.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="tests/RollCalculatorTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tests/RollCalculatorTest.h" ex="false" tool="3" flavor2="0">
@@ -199,6 +189,16 @@
       <item path="tests/RollTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tests/RollTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/SixSideDieNumberGeneratorTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="tests/SixSideDieNumberGeneratorTest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <item path="tests/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
