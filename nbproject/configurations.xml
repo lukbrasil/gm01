@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Attribute.h</itemPath>
       <itemPath>ContestRollResult.h</itemPath>
       <itemPath>NumberGenerator.h</itemPath>
       <itemPath>Roll.h</itemPath>
@@ -18,6 +19,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Attribute.cpp</itemPath>
       <itemPath>ContestRollResult.cpp</itemPath>
       <itemPath>Roll.cpp</itemPath>
       <itemPath>RollCalculator.cpp</itemPath>
@@ -30,6 +32,8 @@
                    projectFiles="false"
                    kind="TEST_LOGICAL_FOLDER">
       <logicalFolder name="f1" displayName="testRoll" projectFiles="true" kind="TEST">
+        <itemPath>tests/AttributeTest.cpp</itemPath>
+        <itemPath>tests/AttributeTest.h</itemPath>
         <itemPath>tests/ConstNumberGenerator.h</itemPath>
         <itemPath>tests/RollCalculatorTest.cpp</itemPath>
         <itemPath>tests/RollCalculatorTest.h</itemPath>
@@ -60,6 +64,10 @@
           <standard>8</standard>
         </ccTool>
       </compileType>
+      <item path="Attribute.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Attribute.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ContestRollResult.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ContestRollResult.h" ex="false" tool="3" flavor2="0">
@@ -97,6 +105,10 @@
         </linkerTool>
       </folder>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/AttributeTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/AttributeTest.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="tests/ConstNumberGenerator.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -142,6 +154,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Attribute.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Attribute.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ContestRollResult.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ContestRollResult.h" ex="false" tool="3" flavor2="0">
@@ -179,6 +195,10 @@
         </linkerTool>
       </folder>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/AttributeTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/AttributeTest.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="tests/ConstNumberGenerator.h" ex="false" tool="3" flavor2="0">
       </item>
